@@ -110,7 +110,7 @@ nav {
     top: 100px;
     text-align: center;
     border-radius: 5px;
-    text-shadow: 1.5px 1.5px 1.5px #b619ae;
+    text-shadow: 0px 0px 1em #b619ae;
     -webkit-text-stroke: 1.5px var(--bg-colour);
 }
 
