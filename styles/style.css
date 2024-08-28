@@ -156,8 +156,12 @@ li {
     font-size: smaller;
 }
 
-i[class^="devicon"] {
+.skills-icons {
     font-size: 3em;
+}
+
+#ejs-icon {
+    font-size: 40px;
 }
 
  /* Projects  */
@@ -228,6 +232,14 @@ i[class^="devicon"] {
 .active {
     font-weight: bold;
     font-size: 1.4em;
+}
+
+.project-icons {
+    font-size: 2em;
+}
+
+#ejs-icon-project {
+    font-size: 26px;
 }
 
 /* Contact */
