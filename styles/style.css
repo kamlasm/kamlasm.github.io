@@ -203,6 +203,11 @@ li {
     height: 100%;
 }
 
+video {  
+    width: 700px;  
+    height: 100%;
+}
+
 .slide-para {
     margin-top: 0;
 }
@@ -294,6 +299,10 @@ li {
     }
 
     .slide-img {    
+        width: 100%;
+    }
+
+    video {
         width: 100%;
     }
 }
