@@ -17,6 +17,7 @@ const nextBtn = document.querySelector(".next")
 const prevBtn = document.querySelector(".prev")
 const slides = document.querySelectorAll(".slide")
 const slideNums = document.querySelectorAll(".slide-num")
+const videos = document.querySelectorAll("video")
 
 let slideIndex = 1
 
@@ -28,7 +29,7 @@ function changeSlide(num) {
     } else {
        slideIndex += num 
     }
-
+    console.log(slideIndex)
     slides.forEach(slide => {
         slide.classList.add("hide")
     })
@@ -37,8 +38,15 @@ function changeSlide(num) {
         dot.classList.remove("active")
     })
 
+    videos.forEach(video => {
+        video.pause()
+        video.setAttribute("muted", "")
+    })
+
     slides[slideIndex-1].classList.remove("hide")
     slideNums[slideIndex-1].classList.add("active")
+
+    videos[slideIndex-1].play()
 }
 
 nextBtn.addEventListener("click", () => changeSlide(1))
